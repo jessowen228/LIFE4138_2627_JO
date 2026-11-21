@@ -64,7 +64,7 @@ def calculate_summary(df):
     summary = (
         df.groupby(["group", "time"])
         .agg(
-            mean=("growth", "median"),
+            mean=("lenghth", "median"), #no growth column
             sd=("length", "std"),
             n=("length", "count")
         )
